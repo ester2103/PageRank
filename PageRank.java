@@ -151,7 +151,7 @@ public class PageRank {
     public static void calcularEExibirPageRank(double[][] matrizConexoes, String[] nomesSites) {
         int n = matrizConexoes.length;
         double d = 0.85;
-        double tolerancia = 1e-7;
+        double tolerancia = 1e-5;
 
         double[][] M = new double[n][n];
         double[] totalSaidas = new double[n];
