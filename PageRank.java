@@ -69,7 +69,7 @@ public class PageRank {
         double[][] matriz = {
                 {0, 1, 1, 0},
                 {1, 0, 0, 0},
-                {1, 0, 0, 0},
+                {1, 0, 0, 1},
                 {1, 0, 0, 0}
         };
         String[] nomes = {"Site 1", "Site 2", "Site 3", "Site 4"};
@@ -81,9 +81,9 @@ public class PageRank {
         double[][] matriz = {
                 {0, 1, 1, 1, 0},
                 {1, 0, 0, 0, 1},
-                {1, 0, 0, 0, 1},
-                {1, 0, 0, 0, 1},
-                {0, 0, 0, 0, 0}
+                {0, 0, 0, 0, 1},
+                {0, 1, 0, 0, 0},
+                {0, 1, 1, 0, 0}
         };
         String[] nomes = {"Site 1", "Site 2", "Site 3", "Site 4", "Site 5"};
         calcularEExibirPageRank(matriz, nomes);
@@ -92,16 +92,16 @@ public class PageRank {
     public static void resolverProblemaC() {
         System.out.println("\n--- Resolvendo Problema C (10 sites) ---");
         double[][] matriz = {
-                {0, 0, 0, 0, 1, 0, 0, 0, 0, 1},
-                {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 1, 1, 0, 1, 0, 0, 0, 0, 1},
                 {0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
-                {0, 1, 0, 1, 0, 0, 0, 0, 0, 0},
-                {0, 0, 1, 0, 0, 0, 1, 0, 0, 0},
-                {0, 0, 0, 1, 0, 1, 0, 0, 0, 0},
-                {0, 0, 0, 0, 1, 0, 0, 0, 1, 0},
-                {0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
-                {1, 0, 0, 0, 0, 0, 0, 0, 1, 0}
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                {0, 1, 1, 0, 0, 1, 1, 0, 0, 1},
+                {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
+                {0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 1, 0},
+                {0, 0, 0, 0, 0, 1, 0, 0, 0, 0},
+                {0, 1, 1, 0, 0, 1, 0, 1, 0, 1},
+                {0, 0, 0, 0, 0, 1, 0, 0, 0, 0}
         };
         String[] nomes = {"Site 1", "Site 2", "Site 3", "Site 4", "Site 5", "Site 6", "Site 7", "Site 8", "Site 9", "Site 10"};
         calcularEExibirPageRank(matriz, nomes);
