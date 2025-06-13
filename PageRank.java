@@ -2,6 +2,7 @@ import java.util.*;
 
 public class PageRank {
 
+
     static final double TOLERANCIA = 1e-5;
 
     record Site(String nome, double autoridade, double hub) {}
