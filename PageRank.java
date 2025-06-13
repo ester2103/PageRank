@@ -14,7 +14,7 @@ public class PageRank {
             exibirMenu();
             try {
                 escolha = scanner.nextInt();
-                scanner.nextLine(); // Consome quebra de linha
+                scanner.nextLine();
                 switch (escolha) {
                     case 1 -> resolverProblemaA();
                     case 2 -> resolverProblemaB();
@@ -101,6 +101,7 @@ public class PageRank {
         }
 
         double[][] A = new double[n][n];
+        System.out.println("Exemplo de relevância: 0 1 0 1");
         for (int i = 0; i < n; i++) {
             System.out.print("Linha " + (i + 1) + ": ");
             String[] linha = scanner.nextLine().trim().split("\\s+");
